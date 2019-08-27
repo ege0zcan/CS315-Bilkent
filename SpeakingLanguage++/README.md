@@ -1,5 +1,5 @@
 # SpeakingLanguage
-Logical operation language designed using yacc and lex for CS-315 Programming languages course
+Logical operation language designed using yacc and lex for CS-315 Programming Languages course
 
  Write "make" in the terminal to generate the parser.
 	
