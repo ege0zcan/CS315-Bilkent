@@ -1,0 +1,49 @@
+x is 5.
+y is 1.
+while x greaterThan 5,
+      y is 5.!.
+write a.
+x is read.
+newFunctionIs Decrease with number1, number2: ps. define a function with parameters
+	      number1 is number1 minus number2.
+	      return 5!
+.
+newFunctionIs Increase: ps. defining a function with no parameters 
+	      number1 is number2 plus 1.
+	      return 1!
+.
+call Move with 15.0.
+call Increase.
+if red equalTo 13, ps. matched if statement
+    number1 is 9.
+    number2 is 10.
+else
+    x is read.
+    number2 is 19.
+    !
+.
+if blue lessThan green, ps. unmatched if statement
+   call Grab.
+   !
+.
+if red equalTo 10, ps. while loop inside unmatched if statement
+   while x greaterThan 5,
+      y is 5.!.
+!.
+if blue equalTo 10, ps. matched if statement
+   if red equalTo 4, ps. unmatched if statement inside matched if 
+      t is 3.
+   !. ps. end of unmatched if
+else 
+   if red equalTo 7, ps. unmatched if with while loop 
+      a is 2.
+      while y lessThan 2,
+      	    x is True.
+      !. ps. end of while loop
+   !. ps. end of unmatched if 
+!. ps. end of the matched if (blue equalTO 10 )
+blue is 7.12 plus 10.
+sum is True and a equalTo 5. ps. sum is (true) and (a == 5)
+sum2 is True or False.
+
+#
