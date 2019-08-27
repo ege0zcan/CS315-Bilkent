@@ -1,0 +1,20 @@
+(define (sonuncu list) (car (reverse list)))
+(define (kirp liste) (cdr(reverse (cdr (reverse liste)))))
+
+(define (foo list)
+  (cond ((<= (length list) 1) #t)
+				((not(equal? (car list) (sonuncu list))) #f)
+        (else (foo (kirp list)))))
+
+(define x 5)
+(define y 5)
+
+(foo '())
+(foo '(x))
+(foo '("ege" "ege"))
+(foo '((1 2) #f "a" 1 ((2 "b") 1 ) 3 ((2 "b") 1) 1 "a" #f (1 2)) ) 
+(foo '(x y)) 
+(foo '(x x) )
+(foo '(1 2)) 
+(foo  '( (1 (2 (3)))   (1 (2 (3))) )) 
+(foo '((1 2) (2 1))) 
