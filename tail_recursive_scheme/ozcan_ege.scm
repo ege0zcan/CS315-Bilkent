@@ -1,10 +1,10 @@
-(define (sonuncu list) (car (reverse list)))
-(define (kirp liste) (cdr(reverse (cdr (reverse liste)))))
+(define (lastelement list) (car (reverse list)))
+(define (crop list) (cdr(reverse (cdr (reverse list)))))
 
 (define (foo list)
   (cond ((<= (length list) 1) #t)
-				((not(equal? (car list) (sonuncu list))) #f)
-        (else (foo (kirp list)))))
+				((not(equal? (car list) (lastelement list))) #f)
+        (else (foo (crop list)))))
 
 (define x 5)
 (define y 5)
